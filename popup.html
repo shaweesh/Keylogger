@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keylogger Extension</title>
+    <style>
+        body {
+            width: 300px;
+            height: 200px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #toggleButton {
+            width: 100px;
+            height: 30px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #keyloggedData {
+            height: 150px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #keyloggerStatus {
+            width: 100px;
+            height: 30px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="toggleButton">Toggle Keylogger</button>
+    <div id="keyloggedData"></div>
+    <div id="keyloggerStatus">Disabled</div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
